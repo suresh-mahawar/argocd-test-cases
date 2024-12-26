@@ -1,0 +1,23 @@
+admissionController:
+  container:
+    resources:
+      limits:
+        memory: 384Mi
+      requests:
+        cpu: 100m
+        memory: 128Mi
+
+backgroundController:
+  enabled: false
+reportsController:
+  enabled: false
+# Cleanup controller configuration
+cleanupController:
+  enabled: true
+  container:
+    resources:
+      limits:
+        memory: 128Mi
+      requests:
+        cpu: 100m
+        memory: 64Mi
